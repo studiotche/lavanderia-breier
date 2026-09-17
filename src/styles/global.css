@@ -69,8 +69,17 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (min-width: 1025px) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+  }
 }
 
 body {
@@ -456,6 +465,11 @@ button {
   height: 88px !important;
   background: rgba(255, 255, 255, 0.98) !important;
   border-bottom: 1px solid #e3e7eb !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
 }
 
 .header-container {
@@ -769,66 +783,85 @@ body.menu-open {
 /* --------------------------------------------------------------------------
    HERO REVEAL ANIMATION (PEDRO ZVIR PARITY)
    -------------------------------------------------------------------------- */
-.hero-content.hero-reveal-ready > .hero-badge {
-  opacity: 0;
-  transform: translateY(14px);
-  animation: hero-line-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: var(--hero-delay, 0s);
-}
+@media (min-width: 761px) {
+  .hero-content.hero-reveal-ready > .hero-badge {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: hero-line-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--hero-delay, 0s);
+  }
 
-.hero-content.hero-reveal-ready .hero-reveal-word {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(12px);
-  animation: hero-line-rise 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: var(--hero-delay, 0s);
-}
-
-.hero-content.hero-reveal-ready .hero-actions > * {
-  opacity: 1;
-  transform: translateY(0);
-  animation: hero-button-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) backwards;
-  animation-delay: var(--hero-delay, 0s);
-}
-
-.hero-content.hero-reveal-ready .hero-actions > *:hover {
-  transform: translateY(-3px) !important;
-}
-
-.hero-content.hero-reveal-ready .hero-actions > *:active {
-  transform: translateY(-1px) !important;
-}
-
-.hero-content .hero-reveal-word.highlight {
-  color: var(--cyan-dark);
-}
-
-.trust-bar.hero-reveal-ready {
-  opacity: 0;
-  transform: translateY(14px);
-  animation: hero-line-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: var(--hero-delay, 0s);
-}
-
-@keyframes hero-line-rise {
-  from {
+  .hero-content.hero-reveal-ready .hero-reveal-word {
+    display: inline-block;
     opacity: 0;
     transform: translateY(12px);
+    animation: hero-line-rise 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--hero-delay, 0s);
   }
-  to {
+
+  .hero-content.hero-reveal-ready .hero-actions > * {
     opacity: 1;
     transform: translateY(0);
+    animation: hero-button-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation-delay: var(--hero-delay, 0s);
+  }
+
+  .hero-content.hero-reveal-ready .hero-actions > *:hover {
+    transform: translateY(-3px) !important;
+  }
+
+  .hero-content.hero-reveal-ready .hero-actions > *:active {
+    transform: translateY(-1px) !important;
+  }
+
+  .hero-content .hero-reveal-word.highlight {
+    color: var(--cyan-dark);
+  }
+
+  .trust-bar.hero-reveal-ready {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: hero-line-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--hero-delay, 0s);
+  }
+
+  @keyframes hero-line-rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hero-button-rise {
+    0% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
-@keyframes hero-button-rise {
-  0% {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 760px) {
+  .hero-content .hero-badge,
+  .hero-content.hero-reveal-ready > .hero-badge,
+  .hero-content .hero-reveal-word,
+  .hero-content.hero-reveal-ready .hero-reveal-word,
+  .hero-content .hero-actions > *,
+  .hero-content.hero-reveal-ready .hero-actions > *,
+  .trust-bar,
+  .trust-bar.hero-reveal-ready {
+    animation: none !important;
+    animation-delay: 0s !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 
@@ -2417,5 +2450,49 @@ body.menu-open {
   .service-icon img {
     width: 62px;
     height: 62px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BOTÃO FLUTUANTE DO WHATSAPP
+   -------------------------------------------------------------------------- */
+.floating-whatsapp {
+  position: fixed;
+  z-index: 950;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: none !important;
+  filter: none !important;
+  transform: translateZ(0);
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.floating-whatsapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 760px) {
+  .floating-whatsapp {
+    right: 18px;
+    bottom: calc(65px + env(safe-area-inset-bottom, 0px));
+    width: 54px;
+    height: 54px;
   }
 }

@@ -98,8 +98,30 @@ function scrollToHashOnLoad(lenis: Lenis): void {
   }, 30);
 }
 
+function injectLenisCSS(): void {
+  if (document.getElementById("sslenisl-css")) return;
+  const style = document.createElement("style");
+  style.id = "sslenisl-css";
+  style.textContent = `
+    html { scroll-behavior: auto !important; }
+    html.lenis { height: auto !important; }
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain !important; }
+    .lenis.lenis-stopped { overflow: hidden !important; }
+  `;
+  document.head.appendChild(style);
+}
+
 async function initSmoothScroll(): Promise<void> {
+  if (typeof window === "undefined") return;
+  const win = window as unknown as { __SSLenisLiteBootstrapped?: boolean };
+  if (win.__SSLenisLiteBootstrapped) return;
+  win.__SSLenisLiteBootstrapped = true;
+
   if (getViewportWidth() < MIN_WIDTH) return;
+
+  injectLenisCSS();
+  document.documentElement.classList.add("lenis", "lenis-smooth");
 
   let lenis: Lenis;
   try {
