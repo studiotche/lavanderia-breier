@@ -665,21 +665,31 @@ body.menu-open {
   opacity: 1;
 }
 
+.mobile-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .mobile-close {
-  display: block;
-  margin-left: auto;
-  width: 34px;
-  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 38px;
   color: var(--navy);
   background: #fff;
   font-size: 26px;
+  line-height: 1;
+  border: 1px solid var(--border);
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .mobile-drawer-brand {
   display: flex;
   align-items: center;
-  margin: 10px 0 20px 0;
 }
 
 .mobile-drawer-brand img {
