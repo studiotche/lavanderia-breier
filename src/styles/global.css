@@ -2671,6 +2671,7 @@ body.menu-open {
   z-index: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
 .service-cta-icon {
@@ -2698,7 +2699,6 @@ body.menu-open {
   color: #4a5b6e !important;
   font-size: 0.95rem !important;
   line-height: 1.55 !important;
-  flex: 1 1 auto !important;
   margin-bottom: 22px !important;
 }
 .btn-cta-card {
