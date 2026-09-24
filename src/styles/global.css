@@ -499,7 +499,7 @@ button {
 }
 
 .header-logo img {
-  height: 58px;
+  height: 80px;
   width: auto;
 }
 
@@ -2387,7 +2387,7 @@ body.menu-open {
     flex: auto;
   }
   .header-logo img {
-    height: 46px;
+    height: 64px;
   }
   .logo-copy strong {
     font-size: 22px;
