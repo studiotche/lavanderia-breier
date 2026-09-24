@@ -70,7 +70,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  /* overflow-x handled in body */
 }
 
 @media (min-width: 1025px) {
@@ -91,7 +91,7 @@ body {
   background: #fff;
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
   padding-top: 88px;
 }
 
