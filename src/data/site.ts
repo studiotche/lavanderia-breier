@@ -37,7 +37,7 @@ export const site = {
     institutional: "/images/lavanderia-breier-hero.webp",
     logo: "/images/logo-lavanderia-breier.webp",
     storefront: "/images/lavanderia-breier.webp",
-    instagram: "/images/lavanderia-ivoti-instagram.webp",
+    instagram: "/images/lavanderia-breier-instagram.webp",
     instagramFeed: "/images/service-roupas.webp",
   },
 } as const;
