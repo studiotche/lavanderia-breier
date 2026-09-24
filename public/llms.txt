@@ -1,6 +1,6 @@
 # Lavanderia Breier
 
-> Cuidado profissional para suas peças com coleta e entrega grátis em Novo Hamburgo/RS. Especialistas em lavagem de roupas, lavagem a seco, higienização e impermeabilização de sofás e estofados, tapetes, cortinas, calçados, linha pet, couro e atendimento institucional com licença de operação SEMAM Novo Hamburgo.
+> Cuidado profissional para suas peças com coleta e entrega em Novo Hamburgo/RS. Especialistas em lavagem de roupas, lavagem a seco, tapetes, cortinas, calçados, linha pet, couro e atendimento institucional com licença de operação SEMAM Novo Hamburgo.
 
 - Site oficial: https://studiotche.github.io/lavanderia-breier/
 - WhatsApp Principal: https://wa.me/5551999199846?text=Ol%C3%A1%2C%20Lavanderia%20Novo Hamburgo!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.
@@ -20,24 +20,23 @@
 
 ## Horários de Funcionamento
 
-- Segunda a sexta-feira: 08:30 às 18:30
-- Sábado: 08:30 às 12:00
+- Segunda a sexta-feira: 08:00 às 12:00 e 13:00 às 18:00
+- Sábado: 08:00 às 12:00
 - Domingo: Fechado
 
 ## Serviços Especializados
 
 - **Lavagem de Roupas e a Seco**: Roupas de uso diário, camisas sociais, ternos, paletós, vestidos de festa e tecidos finos com lavagem a seco profissional.
-- **Sofás e Impermeabilização de Estofados**: Higienização profunda que elimina ácaros, manchas e fungos, combinada com resina protetora impermeabilizante que repele líquidos e sujeira.
-- **Tapetes, Persianas e Cortinas**: Lavagem técnica e higienização para tapetes orientais, felpudos, persianas e cortinas delicadas com secagem controlada.
+- **Tapetes e Cortinas**: Lavagem técnica e higienização para tapetes orientais, felpudos e cortinas delicadas com secagem controlada.
 - **Tênis e Calçados**: Limpeza minuciosa interna e externa, higienização de solados e cadarços, desodorização e renovação do aspecto original.
 - **Linha Pet Especializada**: Desinfecção bactericida e fungicida de caminhas, mantas, roupinhas e tapetes pet com produtos atóxicos e hipoalergênicos.
 - **Jaquetas de Couro e Motoqueiro**: Limpeza técnica e hidratação profunda de peças em couro legítimo, macacões e jaquetas de motociclista com proteção UV.
 - **Passadoria Profissional**: Passadoria a vapor com acabamento impecável, prontas em cabide ou dobradas para facilitar sua rotina.
-- **Rouparia Profissional / Atendimento Institucional**: Contratos corporativos para clínicas, consultórios, centros de diagnóstico e instituições de saúde, com controle microbiológico, laudos e rastreabilidade.
+- **Rouparia Profissional / Atendimento Institucional**: Contratos corporativos para clínicas, consultórios, centros de diagnóstico e estéticas, com controle microbiológico, laudos e rastreabilidade.
 
 ## Diferenciais
 
-- Coleta e devolução gratuitas no endereço do cliente em Novo Hamburgo/RS.
+- Coleta e devolução no endereço do cliente em Novo Hamburgo/RS, com pedido mínimo de R$ 60,00.
 - Sustentabilidade e responsabilidade com licença formal da SEMAM Novo Hamburgo.
 - Produtos biodegradáveis, certificados e que preservam as cores e a durabilidade das fibras têxteis.
 - Tradição, atendimento ágil e pontualidade na entrega.
