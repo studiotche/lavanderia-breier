@@ -2408,7 +2408,7 @@ body.menu-open {
     font-size: 14px;
   }
   .hero-title {
-    font-size: clamp(2.6rem, 8vw, 3.9rem);
+    font-size: clamp(2.4rem, 7vw, 3.2rem);
   }
   .hero-description {
     width: 100%;
@@ -2529,7 +2529,7 @@ body.menu-open {
 
 @media (max-width: 560px) {
   .hero-title {
-    font-size: clamp(2.9rem, 13vw, 4rem);
+    font-size: clamp(2.2rem, 9.5vw, 2.9rem);
   }
   .section-title,
   .about-copy h2,
