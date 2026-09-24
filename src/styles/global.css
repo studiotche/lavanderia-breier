@@ -679,28 +679,26 @@ body.menu-open {
 .mobile-drawer-brand {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 27px 0;
-  color: var(--navy);
-  font-family: var(--serif);
-  font-size: 19px;
+  margin: 10px 0 20px 0;
 }
 
 .mobile-drawer-brand img {
-  height: 42px;
+  height: 64px;
   width: auto;
 }
 
 .mobile-nav-list {
-  border-top: 1px solid var(--border);
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-nav-list a {
   display: flex;
+  justify-content: center;
   padding: 17px 0;
-  border-bottom: 1px solid var(--border);
   font-family: var(--serif);
-  font-size: 15px;
+  font-size: 17px;
+  border: none;
 }
 
 /* --------------------------------------------------------------------------
