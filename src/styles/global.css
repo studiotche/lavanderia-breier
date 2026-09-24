@@ -2185,8 +2185,8 @@ body.menu-open {
     height: auto;
   }
   .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .hero-content {
     position: relative;
@@ -2195,11 +2195,23 @@ body.menu-open {
     transform: none;
     width: min(100% - 34px, 760px);
     margin-inline: auto;
-    padding: 78px 0 64px;
+    padding: 0 0 64px;
+    margin-top: -30px;
+    z-index: 2;
+  }
+  .hero-badge {
+    background: #fff;
   }
   .hero-title {
     max-width: 760px;
-    font-size: clamp(2.6rem, 5.6vw, 3.9rem);
+    font-size: 2.6rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-actions .btn {
+    width: 100%;
   }
   .hero-visual {
     position: relative;
@@ -2540,15 +2552,8 @@ body.menu-open {
 }
 
 @media (max-width: 480px) {
-  .hero-actions {
-    align-items: stretch;
-    flex-direction: column;
-  }
-  .hero-actions .btn {
-    width: 100%;
-  }
   .hero-content {
-    padding: 55px 0 45px;
+    padding: 0 0 45px;
   }
   .hero-visual {
     height: 290px;
