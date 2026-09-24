@@ -88,6 +88,9 @@ body {
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
+}
+
+main {
   padding-top: 88px;
 }
 
@@ -2447,7 +2450,7 @@ body.menu-open {
 }
 
 @media (max-width: 760px) {
-  body {
+  main {
     padding-top: 72px;
   }
 
