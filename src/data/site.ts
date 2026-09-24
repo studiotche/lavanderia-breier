@@ -68,12 +68,12 @@ export const processSteps = [
 ] as const;
 
 export const reviews = [
-  { text: "Atendimento excelente e serviço impecável! Minhas roupas e tapetes ficaram como novos. Super recomendo!", name: "Juliana M.", city: "Novo Hamburgo/RS" },
-  { text: "Tradição e qualidade que fazem a diferença. Confio na lavanderia há anos!", name: "Carlos A.", city: "Novo Hamburgo/RS" },
-  { text: "Equipe atenciosa, serviço rápido e com acabamento perfeito. A melhor da região!", name: "Mariana T.", city: "Novo Hamburgo/RS" },
-  { text: "Minhas camisas sociais voltaram impecáveis, bem passadas e cheirosas. Virei cliente fiel da passadoria.", name: "Rafael S.", city: "Novo Hamburgo/RS" },
-  { text: "Fizeram a higienização do meu sofá e ficou com cheirinho de novo. Trabalho caprichoso do início ao fim.", name: "Patrícia L.", city: "Novo Hamburgo/RS" },
-  { text: "Meu tapete da sala voltou com as cores vivas e sem nenhum odor. Preço justo e entrega no prazo.", name: "Marcos V.", city: "Novo Hamburgo/RS" },
+  { text: "Excelente, recomendo de olhos fechados! Depois de muito pesquisar uma lavanderia especializada em peças delicadas, decidi ir até a Breyer pessoalmente, pois estava receosa com um blazer em linho que tentei tirar uma mancha em casa e só piorou. A Jô me atendeu com muita simpatia, me passando a segurança que eu precisava de que meu blazer ficaria perfeito. E assim ficou! Retirei hoje, no exato prazo estipulado e ele ficou simplesmente perfeito: sem a mancha, limpinho e muito cheiroso! Amei e com certeza recomendo e voltarei em novas oportunidades 🤍✨", name: "Ana Vogel", city: "Novo Hamburgo" },
+  { text: "Foi a primeira vez que levei algo pra lavar lá. Bom trabalho, e ficou pronto antes do tempo previsto. Levei dois tênis da Adidas para lavar e o resultado foi excelente. Devolveram os tênis brilhando, parecia até novos. Serviço de muita qualidade, capricho e ótimo atendimento. Recomendo com certeza!", name: "Ângela", city: "Novo Hamburgo" },
+  { text: "Super indico, em 2024 (mandei lavar um edredom na concorrência e ele tava bem amarelo por sem branco e ficar tempo guardado pedi pra lavar de novo e voltou igual) esse ano 2025 mandei lavar aqui com a lavanderia breier pensa que chegou branquinho e cheiroso adorei muito obrigado pelo profissionalismo de vocês agora e só aqui que vamos mandar tanto as da minha mãe quanto as minhas 🙏🏽", name: "Silmara Silveira", city: "Novo Hamburgo" },
+  { text: "Lavo tapetes e cobertores com eles há 3 anos e são ótimos! Sempre cumprem o prazo, os tapetes vem limpos, sem manchas e cheirosos.", name: "Michele Penteado", city: "Novo Hamburgo" },
+  { text: "Os serviços da lavanderia, super recomendo, excelente trabalho. Parabéns pela excelência, razão pela qual está a mais de 30 anos no mercado.", name: "Paulo Daniel Rogovschi", city: "Novo Hamburgo" },
+  { text: "Serviço profissional, de extrema Carinho, com muita dedicação, recomendo sempre. Cliente Fiel", name: "Paulo Ricardo Lima Pereira", city: "Novo Hamburgo" },
 ] as const;
 
 export const faqs = [
